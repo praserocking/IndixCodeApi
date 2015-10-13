@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ECDDEEF-00C5-49E7-B02E-689961DE2873}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IndixCodeSearch</RootNamespace>
+    <AssemblyName>IndixCodeSearch</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\src\adlist.c" />
+    <Content Include="App_Data\src\adlist.h" />
+    <Content Include="App_Data\src\ae.c" />
+    <Content Include="App_Data\src\ae.h" />
+    <Content Include="App_Data\src\ae_epoll.c" />
+    <Content Include="App_Data\src\ae_evport.c" />
+    <Content Include="App_Data\src\ae_kqueue.c" />
+    <Content Include="App_Data\src\ae_select.c" />
+    <Content Include="App_Data\src\anet.c" />
+    <Content Include="App_Data\src\anet.h" />
+    <Content Include="App_Data\src\aof.c" />
+    <Content Include="App_Data\src\asciilogo.h" />
+    <Content Include="App_Data\src\bio.c" />
+    <Content Include="App_Data\src\bio.h" />
+    <Content Include="App_Data\src\bitops.c" />
+    <Content Include="App_Data\src\blocked.c" />
+    <Content Include="App_Data\src\cluster.c" />
+    <Content Include="App_Data\src\cluster.h" />
+    <Content Include="App_Data\src\config.c" />
+    <Content Include="App_Data\src\config.h" />
+    <Content Include="App_Data\src\crc16.c" />
+    <Content Include="App_Data\src\crc64.c" />
+    <Content Include="App_Data\src\crc64.h" />
+    <Content Include="App_Data\src\db.c" />
+    <Content Include="App_Data\src\debug.c" />
+    <Content Include="App_Data\src\dict.c" />
+    <Content Include="App_Data\src\dict.h" />
+    <Content Include="App_Data\src\endianconv.c" />
+    <Content Include="App_Data\src\endianconv.h" />
+    <Content Include="App_Data\src\fmacros.h" />
+    <Content Include="App_Data\src\geo.c" />
+    <Content Include="App_Data\src\geo.h" />
+    <Content Include="App_Data\src\help.h" />
+    <Content Include="App_Data\src\hyperloglog.c" />
+    <Content Include="App_Data\src\intset.c" />
+    <Content Include="App_Data\src\intset.h" />
+    <Content Include="App_Data\src\latency.c" />
+    <Content Include="App_Data\src\latency.h" />
+    <Content Include="App_Data\src\lzf.h" />
+    <Content Include="App_Data\src\lzfP.h" />
+    <Content Include="App_Data\src\lzf_c.c" />
+    <Content Include="App_Data\src\lzf_d.c" />
+    <Content Include="App_Data\src\memtest.c" />
+    <Content Include="App_Data\src\multi.c" />
+    <Content Include="App_Data\src\networking.c" />
+    <Content Include="App_Data\src\notify.c" />
+    <Content Include="App_Data\src\object.c" />
+    <Content Include="App_Data\src\pqsort.c" />
+    <Content Include="App_Data\src\pqsort.h" />
+    <Content Include="App_Data\src\pubsub.c" />
+    <Content Include="App_Data\src\quicklist.c" />
+    <Content Include="App_Data\src\quicklist.h" />
+    <Content Include="App_Data\src\rand.c" />
+    <Content Include="App_Data\src\rand.h" />
+    <Content Include="App_Data\src\rdb.c" />
+    <Content Include="App_Data\src\rdb.h" />
+    <Content Include="App_Data\src\redis-benchmark.c" />
+    <Content Include="App_Data\src\redis-check-aof.c" />
+    <Content Include="App_Data\src\redis-check-rdb.c" />
+    <Content Include="App_Data\src\redis-cli.c" />
+    <Content Include="App_Data\src\redisassert.h" />
+    <Content Include="App_Data\src\release.c" />
+    <Content Include="App_Data\src\replication.c" />
+    <Content Include="App_Data\src\rio.c" />
+    <Content Include="App_Data\src\rio.h" />
+    <Content Include="App_Data\src\scripting.c" />
+    <Content Include="App_Data\src\sds.c" />
+    <Content Include="App_Data\src\sds.h" />
+    <Content Include="App_Data\src\sdsalloc.h" />
+    <Content Include="App_Data\src\sentinel.c" />
+    <Content Include="App_Data\src\server.c" />
+    <Content Include="App_Data\src\server.h" />
+    <Content Include="App_Data\src\setproctitle.c" />
+    <Content Include="App_Data\src\sha1.c" />
+    <Content Include="App_Data\src\sha1.h" />
+    <Content Include="App_Data\src\slowlog.c" />
+    <Content Include="App_Data\src\slowlog.h" />
+    <Content Include="App_Data\src\solarisfixes.h" />
+    <Content Include="App_Data\src\sort.c" />
+    <Content Include="App_Data\src\sparkline.c" />
+    <Content Include="App_Data\src\sparkline.h" />
+    <Content Include="App_Data\src\syncio.c" />
+    <Content Include="App_Data\src\testhelp.h" />
+    <Content Include="App_Data\src\t_hash.c" />
+    <Content Include="App_Data\src\t_list.c" />
+    <Content Include="App_Data\src\t_set.c" />
+    <Content Include="App_Data\src\t_string.c" />
+    <Content Include="App_Data\src\t_zset.c" />
+    <Content Include="App_Data\src\util.c" />
+    <Content Include="App_Data\src\util.h" />
+    <Content Include="App_Data\src\version.h" />
+    <Content Include="App_Data\src\ziplist.c" />
+    <Content Include="App_Data\src\ziplist.h" />
+    <Content Include="App_Data\src\zipmap.c" />
+    <Content Include="App_Data\src\zipmap.h" />
+    <Content Include="App_Data\src\zmalloc.c" />
+    <Content Include="App_Data\src\zmalloc.h" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiDefinitions\DataProcessor.cs" />
+    <Compile Include="ApiDefinitions\DataReader.cs" />
+    <Compile Include="Api\IDataReader.cs" />
+    <Compile Include="Api\IDataProcessor.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Constants\ApiErrorCodes.cs" />
+    <Compile Include="Controllers\WebApiController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApiError.cs" />
+    <Compile Include="Models\ApiResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="App_Data\src\.gitignore" />
+    <Content Include="App_Data\src\Makefile" />
+    <Content Include="App_Data\src\Makefile.dep" />
+    <Content Include="App_Data\src\mkreleasehdr.sh" />
+    <Content Include="App_Data\src\redis-trib.rb" />
+    <Content Include="App_Data\src\valgrind.sup" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55593</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55593/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
